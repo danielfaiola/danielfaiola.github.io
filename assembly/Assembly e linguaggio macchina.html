@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assembly e linguaggio macchina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Linguaggi di Programmazione e Assembly</h1>
+    </header>
+
+    <section>
+        <h2>Linguaggio Assembly</h2>
+        <p>Il linguaggio assembly è un linguaggio di basso livello che utilizza mnemonici per rappresentare le istruzioni specifiche della CPU di un processore. Collegato strettamente all'architettura hardware, offre un controllo preciso sulle operazioni della macchina, richiedendo una conoscenza dettagliata della CPU di destinazione. Utilizzato in contesti in cui è essenziale ottimizzare le prestazioni e massimizzare il controllo sulle risorse hardware, come nello sviluppo di sistemi embedded e software a basso livello.</p>
+    </section>
+
+    <section>
+        <h2>Linguaggio Macchina</h2>
+        <p>Il linguaggio macchina, l'essenza stessa della programmazione, si presenta come una serie di istruzioni binarie che la CPU esegue direttamente. Ciascuna di queste istruzioni è incapsulata in sequenze specifiche di bit, dove ogni singolo bit gioca un ruolo cruciale nell'orchestrare le operazioni della CPU. Questa forma di programmazione richiede una comprensione profonda della struttura e del funzionamento della CPU, dato che ogni sequenza binaria traduce chiaramente un'operazione specifica. La scrittura in linguaggio macchina implica un controllo dettagliato delle istruzioni a livello hardware, sottolineando la necessità di una precisione senza compromessi.</p>
+    </section>
+
+    <section>
+        <h2>Assembler</h2>
+        <p>L'assemblatore, elemento chiave nello sviluppo a basso livello del software, assume il ruolo fondamentale di tradurre il codice scritto in linguaggio assembly in istruzioni binarie eseguibili dalla CPU, ovvero il linguaggio macchina. Funzionando come un ponte essenziale tra il linguaggio umano-compreensibile dell'assembly e l'astrazione puramente binaria richiesta dalla CPU, l'assemblatore svolge un compito cruciale nella catena di compilazione del software.</p>
+    </section>
+
+    <section>
+        <h2>Linguaggio di Programmazione ad Alto Livello</h2>
+        <p>
+I linguaggi di programmazione ad alto livello, quali Python, Java e C++, si collocano all'opposto dello spettro rispetto al linguaggio assembly. Sono progettati con l'obiettivo di rendere il processo di sviluppo del software più accessibile e comprensibile per gli sviluppatori. Contrariamente al linguaggio assembly, dove ogni istruzione è direttamente associata all'hardware della CPU, i linguaggi ad alto livello offrono un'astrazione più elevata.</p>
+    </section>
+
+    <section>
+        <h2>Compilatore ed Interprete</h2>
+        <p>
+Il processo di compilazione e interpretazione rappresenta un elemento fondamentale nel ciclo di vita del software scritto in linguaggi ad alto livello. Un compilatore e un interprete sono strumenti distinti che consentono l'esecuzione di programmi, ma seguono approcci differenti.
+Il compilatore assume la responsabilità di tradurre l'intero codice sorgente in linguaggio macchina in un'unica fase. Questo processo, noto come compilazione, produce un file eseguibile indipendente dal codice sorgente originale. Il risultato è un programma autonomo che può essere eseguito senza la necessità del codice sorgente.</p>
+    </section>
+
+    <section>
+        <h2>Immagini e Link</h2>
+        <img src="https://www.fastweb.it/var/storage_feeds/CMS/articoli/1ff/1ffef3fab487508cf9d8405c70306c13/640x360.jpg" 
+    </section>
+<section>
+<p></p>
+</section>
+    <section>
+        <h2>In generale le caratteristiche:</h2>
+        <ul>
+            <li>Scopo: L'assembly ha lo scopo generale di consentire al programmatore di ignorare il formato binario del linguaggio macchina. Ogni codice operativo del linguaggio macchina viene sostituito, nell'assembly, da una sequenza di caratteri che lo rappresenta in forma mnemonica; per esempio, il codice operativo per la somma potrebbe essere trascritto come ADD e quello per il salto come JMP.</ul></li>
+            <ul><li>Non univocità: A causa di questa "vicinanza" all'hardware, non esiste un unico linguaggio assembly. Al contrario, ogni CPU o famiglia di CPU ha un suo proprio assembly, diverso dagli altri.</ul></li>
+            <ul><li>Struttura: La struttura di un tipico listato Assembly per PC si articola, a grandi linee, nei seguenti termini:</li>
+        </ul>
+
+        <ol>
+            <li>intestazione</li>
+            <li>segmento dati</li>
+            <li>segmento di stack</li>
+<li>segmento di codice</li>
+<li>chiusura</li>
+
+        </ol>
+
+<section>
+        <h2>Tabella</h2>
+</section>
+        <table>
+            <thead>
+                <tr>
+                    <th>PRO</th>
+                    <th>CONTRO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Più leggibile del linguaggio macchina</td>
+                    <td>Ogni tipo di CPU ha un proprio linguaggio Assembly</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Scrivere applicazioni complesse è laborioso</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>2024 Minisito sull'Informatica. Daniel Faiola / Andry Laci </p>
+    </footer>
+
+</body>
+</html>
