@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riassunto Sistema Operativo e Avvio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 20px;
+      background-color: #f9f9f8;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 1, 0, 0.1);
+    }
+    h1 {
+      color: #3;
+      text-align: center;
+    }
+    h2 {
+      color: #555;
+    }
+    p {
+      color: #666;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .highlight {
+      background-color: #f2f2f2;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sistema Operativo e Avvio</h1>
+    
+    <h2>Sistema Operativo</h2>
+    <p>Il sistema operativo (SO) è un software fondamentale che gestisce le risorse hardware e software di un computer. Tra le sue principali funzioni ci sono:</p>
+    <ul>
+      <li>Gestione delle risorse hardware come CPU, memoria, dispositivi di input/output.</li>
+      <li>Fornitura di un'interfaccia per gli utenti e le applicazioni per accedere alle risorse del sistema.</li>
+      <li>Gestione dei processi e della loro esecuzione in modo multitasking.</li>
+      <li>Gestione dei file e delle operazioni di input/output sul disco rigido.</li>
+      <li>Fornitura di servizi di rete come la connettività Internet e la gestione dei protocolli di comunicazione.</li>
+      <li>Garanzia della sicurezza e della protezione dei dati.</li>
+    </ul>
+    
+    <h2>Avvio del Sistema Operativo</h2>
+    <p>Il processo di avvio del sistema operativo inizia quando il computer viene acceso. Durante l'avvio, il computer esegue una sequenza di operazioni per preparare il sistema operativo per l'uso. Queste operazioni includono:</p>
+    <ul>
+      <li>Il BIOS o l'UEFI effettua i test hardware iniziali e carica il bootloader dal disco rigido o da altri dispositivi di avvio.</li>
+      <li>Il bootloader, come GRUB per Linux o NTLDR per Windows, carica il sistema operativo in memoria e ne avvia l'esecuzione.</li>
+      <li>Il sistema operativo completa l'avvio, inizializzando i driver di dispositivo, avviando i servizi di sistema e presentando l'interfaccia utente all'utente.</li>
+    </ul>
+    
+    <h2>Tipologie di Interfacce</h2>
+    <p>Le interfacce utente consentono agli utenti di interagire con il computer e le sue applicazioni. Le principali tipologie di interfacce includono:</p>
+    <ul>
+      <li><strong>Interfaccia Utente:</strong> L'interfaccia utente permette agli utenti di interagire con il computer attraverso comandi e testo. Ad esempio, una shell di linea di comando.</li>
+      <li><strong>Interfaccia Grafica (GUI):</strong> L'interfaccia grafica consente agli utenti di interagire con il computer attraverso elementi visivi come finestre, icone e menu.</li>
+    </ul>
+    
+    <h2>Risorse File e Cartelle</h2>
+    <p>I file e le cartelle sono le unità di base per l'organizzazione e la gestione dei dati in un computer. Un file è una raccolta di dati con un nome associato, mentre una cartella è una raccolta di file e altre cartelle. Le operazioni principali sui file e le cartelle includono:</p>
+    <ul>
+      <li>Creazione, modifica e eliminazione di file e cartelle.</li>
+      <li>Accesso e lettura dei contenuti dei file.</li>
+      <li>Spostamento e rinomina di file e cartelle.</li>
+      <li>Condivisione e protezione dei file attraverso i permessi di accesso.</li>
+    </ul>
+    
+    <h2>Hard Disk e File System</h2>
+    <p>L'hard disk è un dispositivo di memorizzazione permanente che conserva i dati anche quando il computer è spento. È diviso in una o più partizioni, ognuna delle quali è formattata con un file system. I file system più comuni includono NTFS per Windows, HFS+ per macOS e ext4 per Linux. Il file system gestisce la struttura e l'accesso ai file e alle cartelle sul disco rigido.</p>
+    
+    <h2>Windows, macOS e Linux a Confronto</h2>
+    <p>I principali sistemi operativi per computer sono Windows, macOS e Linux. Ognuno ha caratteristiche uniche e differenze significative:</p>
+    <ul>
+      <li><strong>Windows:</strong> Sviluppato da Microsoft, Windows è noto per la sua ampia compatibilità con il software e l'hardware di terze parti. Offre un'interfaccia grafica user-friendly e un supporto per giochi e applicazioni multimediali.</li>
+      <li><strong>macOS:</strong> Il sistema operativo di Apple è progettato per i computer Mac. È noto per la sua stabilità, la sua integrazione con l'ecosistema Apple e le sue funzionalità creative come iMovie e GarageBand.</li>
+      <li><strong>Linux:</strong> Basato sul kernel Linux, Linux è un sistema operativo open source utilizzato principalmente nei server e nei computer desktop degli utenti avanzati. È altamente personalizzabile e offre una vasta gamma di distribuzioni come Ubuntu, Fedora e Debian.</li>
+    </ul>
+    
+    <div class="highlight">
+      <h2>Domande</h2>
+      <ol>
+        <li><strong>Quali compiti svolge il programma boot loader?</strong><br>
+        Il boot loader ha il compito di avviare il sistema operativo, leggendo il Master Boot Record (MBR) dal disco rigido e avviando il sistema operativo principale.</li>
+        <li><strong>Qual è il formato del Master Boot Record?</strong><br>
+        Il Master Boot Record è una struttura di 512 byte che contiene un programma di avvio (boot loader) e una tabella delle partizioni.</li>
+        <li><strong>Spiega che cos'è e come viene usata la Partition Table.</strong><br>
+        La Partition Table è una tabella situata nel MBR che contiene informazioni sulle partizioni presenti sul disco rigido. Viene utilizzata dal sistema operativo per individuare le partizioni e avviare il sistema operativo dalla partizione attiva.</li>
+        <li><strong>Descrivi il formato di una entry della Partition Table.</strong><br>
+        Ogni entry della Partition Table contiene informazioni come l'indirizzo di partenza e la dimensione della partizione.</li>
+        <li><strong>Che cosa significa che una partizione è attiva?</strong><br>
+        Una partizione attiva è quella che contiene il sistema operativo avviabile. Il boot loader avvia il sistema operativo dalla partizione attiva.</li>
+        <li><strong>Che differenza c'è tra le notazioni CHS e LBA con cui si indirizzano i dati sul disco?</strong><br>
+        CHS (Cylinder-Head-Sector) è un metodo di indirizzamento basato sulla geometria del disco, mentre LBA (Logical Block Addressing) indirizza i settori in modo logico.</li>
+        <li><strong>Come si interpreta un dato che occupa più byte secondo la tecnica little-endian?</strong><br>
+        In Little-Endian, i byte meno significativi vengono memorizzati per primi. Questo significa che l'ordine dei byte è invertito rispetto all'ordine di scrittura tradizionale.</li>
+        <li><strong>Confronta le tecniche del multi-boot e della virtualizzazione dei Sistemi Operativi.</strong><br>
+        Il multi-boot consente di avviare più sistemi operativi su un singolo computer, mentre la virtualizzazione emula un intero ambiente hardware per eseguire un sistema operativo all'interno di un altro sistema operativo.</li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html> 
