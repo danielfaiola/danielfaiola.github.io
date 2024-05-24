@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Sito Personale</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .jumbotron {
+            background: linear-gradient(135deg, #007bff, #00d4ff);
+            color: white;
+            text-align: center;
+            padding: 100px 25px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .jumbotron h1, .jumbotron p, .jumbotron .btn {
+            position: relative;
+            z-index: 2;
+        }
+        .jumbotron h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            animation: fadeInDown 2s;
+        }
+        .jumbotron p {
+            font-size: 1.2rem;
+            animation: fadeInUp 2s;
+        }
+        .footer {
+            background-color: #6c757d;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .logo img {
+            max-width: 150px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .nav-item a {
+            font-size: 1.1rem;
+        }
+        .card {
+            margin: 20px 0;
+            border: none;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <div class="logo">
+                <img src="images/logodanielgiusto.png" alt="Il Mio Logo">
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Chi Sono</a></li>
+                <li class="nav-item"><a class="nav-link" href="experience.html">Esperienze</a></li>
+                <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobby</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Benvenuti nel mio sito personale!</h1>
+            <p class="lead">Sono Daniel Faiola, un ragazzo che studia programmazione.</p>
+            <hr class="my-4">
+            <p>Esplora il sito per conoscere di più su di me, le mie esperienze e i miei hobby.</p>
+            <a class="btn btn-primary btn-lg" href="about.html" role="button">Scopri di più</a>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="section-title">Chi Sono</h2>
+                        <p>Clicca qui e scopri di più su di me!</p>
+                        <a class="btn btn-secondary" href="about.html" role="button">Leggi di più</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="section-title">Esperienze</h2>
+                        <p>Clicca qui e scopri di più sulle mie esperienze!</p>
+                        <a class="btn btn-secondary" href="experience.html" role="button">Leggi di più</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="section-title">Hobby</h2>
+                        <p>Clicca qui e scopri di più sui miei hobby!</p>
+                        <a class="btn btn-secondary" href="hobbies.html" role="button">Leggi di più</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 DANIEL FAIOLA.</p>
+            <div>
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
