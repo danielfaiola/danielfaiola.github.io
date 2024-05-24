@@ -1,0 +1,4 @@
+PRIMA DI GUARDARE TUTTO LEGGI QUI!
+Gli html dell'esercizio complessivo sono: indice.html, esercizi.html e presentazione.html .
+Tutti hli altri file html servono solo per far visualizzare le 3 tipologie di esercizi diversi richieste nell'esercizio complessivo.
+Quindi per osservare l'esercizio complessivo basta cliccase su "indice.html".
